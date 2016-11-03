@@ -1,0 +1,21 @@
+Features that have been done:
+1.all external commands under /bin with multiple parameters
+2.internal commands: cd, exit
+3.multiple piping is working properly
+4.capable of handling all errors sufficiently
+
+Features that have not been done yet:
+1.internal commands: jobs, fg, bg
+2.job control
+
+Test set:
+1.a document named "textfile" is provided for testing
+2.example command for testing: "cat textfile | gzip -c | gunzip -c | tail -n 10"
+
+Ackonwledgement:
+1.sample code: pipies.c, shell-pipe.c from professor Ryan Shea
+2.basic code structure setup idea came from slides on the "Assignment1 Hint.pdf" 
+3.links provided from professor Ryan Shea under Assingment1part2 FAQ
+  http://www.sfu.ca/~rws1/cmpt-300/assignments/a1-sample-fork.pdf  
+  http://www.thegeekstuff.com/2012/03/catch-signals-sample-c-code/
+  http://www.gnu.org/software/libc/manual/html_node/Implementing-a-Shell.html#Implementing-a-Shell
